@@ -1,0 +1,23 @@
+.img_parent img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.action {
+    background: none !important;
+    border: none;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.drop_btn {
+    background: none !important;
+    border: none;
+}
+
+.dots {
+    font-size: 20px;
+    margin-top: 5px;
+}
