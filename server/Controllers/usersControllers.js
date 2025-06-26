@@ -135,53 +135,6 @@ const userstatus = async(req,res)=>{
     }
 }
 
-// const userExport=async(req,res)=>{
-//     try {
-//         const userdata = await usersModel.find();
-
-//         const csvStream = csv.format({header:true});
-
-//         if(!fs.existsSync("public/files/export")){
-//             if(!fs.existsSync("public/files")){
-//                 fs.mkdirSync("public/files/")
-//             }
-//             if(!fs.existsSync("public/files/export")) {
-//                 fs.mkdir("./public/files/export")
-//             }
-
-//         }
-//         const writablestream = fs.createWriteStream(
-//             "public/files/export/users.csv" 
-//         )
-//         csvStream.pipe(writablestream);
-//         writablestream.on("finish",function(){
-//             res.json({
-//                 downloadUrl:`http://localhost:6010/files/export/users.csv`
-//             })
-//         });
-//         if(userdata.length > 0) {
-//             userdata.map((user)=>{
-//                 csvStream.write({
-//                     FirstName:user.fname ? user.fname : "_",
-//                     Lastname:user.lname ? user.lname : "_",
-//                     Email:user.email ? user.email : "_",
-//                     Phone:user.mobile ? user.mobile : "_",
-//                     Gender:user.gender ? user.gender : "_",
-//                     Status:user.status ? user.status : "_",
-//                     Profile:user.profile ? user.profile : "_",
-//                     Location:user.location ? user.location : "_",
-//                     DateCreated: user.dataCreated ? user.dataCreated : "_",
-//                     DateUpdated:user.dateUpdated ? user.dateUpdated : "_",  
-//                 })
-//             })
-//         }
-//         csvStream.end();
-//         writablestream.end();
-//     }catch(error) {
-//         res.status(401).json(error)
-//     } 
-// }
-/////////////////////////////
 const userExport = async (req, res) => {
     try {
         const userdata = await usersModel.find();
