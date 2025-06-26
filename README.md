@@ -84,12 +84,12 @@ server/
 
 ### 1️⃣ Backend Setup
 
-```bash
 cd server
 npm install
 node app.js
 
 ### 2️⃣ Frontend Setup
+
 cd client
 npm install
 npm start
