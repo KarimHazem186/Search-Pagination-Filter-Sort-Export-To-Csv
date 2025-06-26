@@ -1,4 +1,4 @@
-### 🧾 MERN CRUD Dashboard — Search, Pagination, Filter, Sort, Export to CSV
+# 🧾 MERN CRUD Dashboard — Search, Pagination, Filter, Sort, Export to CSV
 
 A full-stack MERN (MongoDB, Express, React, Node.js) application with advanced data management features:
 
