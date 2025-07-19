@@ -15,54 +15,87 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application with advanced d
 ### 🔹 Frontend (React)
 
 client/
+-
 └── src/
+-
 ├── Components/
+-
 │ ├── Header/
+-
 │ ├── Footer/
+-
 │ ├── Pagination/
+-
 │ └── Tables/
+-
 │
 ├── Assets/
+-
 │ └── Images/
+-
 │
 ├── Pages/
+-
 │ ├── Home/
+-
 │ ├── Edit/
+-
 │ ├── Profile/
+-
 │ └── Register/
+-
 │
 ├── Services/
+-
 │ └── Apis/ # Axios service calls
+-
 │
 ├── App.js # Root component
+-
 └── index.js # Entry point
+-
 
 ---
 
 ### 🔹 Backend (Node.js + Express)
 
 server/
+-
 ├── Controllers/
+-
 │ └── userController.js # Business logic
+-
 │
 ├── db/
+-
 │ └── Connection.js # MongoDB connection
+-
 │
 ├── models/
+-
 │ └── userSchema.js # Mongoose schema
+-
 │
 ├── multerconfig/ # File upload config
+-
 │
 ├── public/ # Static assets (if needed)
+-
 │
 ├── Routes/
+-
 │ └── Router.js # All API routes
+-
 │
 ├── uploads/ # Uploaded files
+-
 │
 ├── .env # Environment variables
+-
 ├── app.js # Express entry point
+-
 └── node_modules/
+-
 
 ---
 
